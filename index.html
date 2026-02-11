@@ -110,27 +110,20 @@ nav a:hover {
   flex-direction: column;
 }
 
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: none;
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.2em;
 }
 
-.contact-form button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background: #f39c12;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
+.contact-info a {
+  color: #f39c12;
+  text-decoration: none;
 }
 
-.contact-form button:hover {
-  background: #e67e22;
+.contact-info a:hover {
+  text-decoration: underline;
 }
 </style>
 </head>
@@ -184,13 +177,13 @@ nav a:hover {
 
 <section id="contact">
   <h2>Contact Me</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-  <p>Email: example@mail.com | Phone: +961 71 050 505</p>
+  <div class="contact-info">
+    <p>Email: <a href="mailto:example@mail.com">example@mail.com</a></p>
+    <p>Phone: <a href="tel:+96171050505">+961 71 050 505</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/hasan</a></p>
+    <p>Instagram: <a href="https://instagram.com" target="_blank">@hasan</a></p>
+    <p>Twitter: <a href="https://twitter.com" target="_blank">@hasan</a></p>
+  </div>
 </section>
 
 </body>
